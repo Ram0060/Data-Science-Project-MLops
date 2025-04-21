@@ -1,2 +1,112 @@
 [2025-04-20 15:19:13,537: INFO: main:  welcome to our custom logger data science project: ]
 [2025-04-20 15:20:02,765: INFO: main:  welcome to our custom logger data science project]
+[2025-04-21 12:54:39,671: INFO: common:  ymal file:config/config.yaml loaded successfully]
+[2025-04-21 12:54:39,676: INFO: common:  ymal file:params.yaml loaded successfully]
+[2025-04-21 12:54:39,677: INFO: common:  ymal file:schema.yaml loaded successfully]
+[2025-04-21 12:54:39,678: INFO: common:  created directory at: artifacts]
+[2025-04-21 12:54:39,679: INFO: common:  created directory at: artifacts/data_ingestion]
+[2025-04-21 12:54:40,394: INFO: 3979074966:  artifacts/data_ingestion/data.zip is downloaded, with following info: Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 14AF:21AE1E:DE26DD:11C75E0:6806784F
+Accept-Ranges: bytes
+Date: Mon, 21 Apr 2025 16:54:40 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ewr-kewr1740060-EWR
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1745254480.044883,VS0,VE295
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 66931eb2702a1b59acc6e1a3e9d6510d4fb5712c
+Expires: Mon, 21 Apr 2025 16:59:40 GMT
+Source-Age: 0
+
+]
+[2025-04-21 12:54:40,401: INFO: 3979074966:  Extracted all the files in artifacts/data_ingestion]
+[2025-04-21 13:20:44,895: INFO: main:  >>>>>>>stageData Ingestion stage started<<<<<<]
+[2025-04-21 13:20:44,896: INFO: common:  ymal file:config/config.yaml loaded successfully]
+[2025-04-21 13:20:44,898: INFO: common:  ymal file:params.yaml loaded successfully]
+[2025-04-21 13:20:44,898: INFO: common:  ymal file:schema.yaml loaded successfully]
+[2025-04-21 13:20:44,899: INFO: common:  created directory at: artifacts]
+[2025-04-21 13:20:44,899: INFO: common:  created directory at: artifacts/data_ingestion]
+[2025-04-21 13:20:45,264: INFO: data_ingestion:  artifacts/data_ingestion/data.zip is downloaded, with following info: Connection: close
+Content-Length: 23329
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "c69888a4ae59bc5a893392785a938ccd4937981c06ba8a9d6a21aa52b4ab5b6e"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 14AF:21AE1E:DE26DD:11C75E0:6806784F
+Accept-Ranges: bytes
+Date: Mon, 21 Apr 2025 17:20:45 GMT
+Via: 1.1 varnish
+X-Served-By: cache-ewr-kewr1740034-EWR
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1745256045.180730,VS0,VE78
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 39a06d5c80830e9b0054529774a53fdae5d7cd5f
+Expires: Mon, 21 Apr 2025 17:25:45 GMT
+Source-Age: 0
+
+]
+[2025-04-21 13:20:45,267: INFO: data_ingestion:  Extracted all the files in artifacts/data_ingestion]
+[2025-04-21 13:20:45,268: INFO: main:  >>>>>>>stageData Ingestion stage completed<<<<<<]
+[2025-04-21 14:47:03,893: INFO: common:  ymal file:config/config.yaml loaded successfully]
+[2025-04-21 14:47:03,896: INFO: common:  ymal file:params.yaml loaded successfully]
+[2025-04-21 14:47:03,898: INFO: common:  ymal file:schema.yaml loaded successfully]
+[2025-04-21 14:47:03,900: INFO: common:  created directory at: artifacts]
+[2025-04-21 14:49:49,136: INFO: common:  ymal file:config/config.yaml loaded successfully]
+[2025-04-21 14:49:49,139: INFO: common:  ymal file:params.yaml loaded successfully]
+[2025-04-21 14:49:49,142: INFO: common:  ymal file:schema.yaml loaded successfully]
+[2025-04-21 14:49:49,143: INFO: common:  created directory at: artifacts]
+[2025-04-21 14:50:40,956: INFO: common:  ymal file:config/config.yaml loaded successfully]
+[2025-04-21 14:50:40,959: INFO: common:  ymal file:params.yaml loaded successfully]
+[2025-04-21 14:50:40,961: INFO: common:  ymal file:schema.yaml loaded successfully]
+[2025-04-21 14:50:40,962: INFO: common:  created directory at: artifacts]
+[2025-04-21 14:50:40,963: INFO: common:  created directory at: artifacts/data_validation]
+[2025-04-21 14:56:42,426: INFO: common:  ymal file:config/config.yaml loaded successfully]
+[2025-04-21 14:56:42,428: INFO: common:  ymal file:params.yaml loaded successfully]
+[2025-04-21 14:56:42,430: INFO: common:  ymal file:schema.yaml loaded successfully]
+[2025-04-21 14:56:42,431: INFO: common:  created directory at: artifacts]
+[2025-04-21 14:56:42,432: INFO: common:  created directory at: artifacts/data_validation]
+[2025-04-21 14:58:15,989: INFO: common:  ymal file:config/config.yaml loaded successfully]
+[2025-04-21 14:58:15,991: INFO: common:  ymal file:params.yaml loaded successfully]
+[2025-04-21 14:58:15,994: INFO: common:  ymal file:schema.yaml loaded successfully]
+[2025-04-21 14:58:15,995: INFO: common:  created directory at: artifacts]
+[2025-04-21 14:58:15,996: INFO: common:  created directory at: artifacts/data_validation]
+[2025-04-21 15:03:17,713: INFO: common:  ymal file:config/config.yaml loaded successfully]
+[2025-04-21 15:03:17,716: INFO: common:  ymal file:params.yaml loaded successfully]
+[2025-04-21 15:03:17,719: INFO: common:  ymal file:schema.yaml loaded successfully]
+[2025-04-21 15:03:17,720: INFO: common:  created directory at: artifacts]
+[2025-04-21 15:03:17,721: INFO: common:  created directory at: artifacts/data_validation]
+[2025-04-21 15:37:34,170: INFO: main:  >>>>>>>stageData Ingestion stage started<<<<<<]
+[2025-04-21 15:37:34,172: INFO: common:  ymal file:config/config.yaml loaded successfully]
+[2025-04-21 15:37:34,173: INFO: common:  ymal file:params.yaml loaded successfully]
+[2025-04-21 15:37:34,175: INFO: common:  ymal file:schema.yaml loaded successfully]
+[2025-04-21 15:37:34,175: INFO: common:  created directory at: artifacts]
+[2025-04-21 15:37:34,175: INFO: common:  created directory at: artifacts/data_ingestion]
+[2025-04-21 15:37:34,175: INFO: data_ingestion:  artifacts/data_ingestion/data.zip already exists]
+[2025-04-21 15:37:34,178: INFO: data_ingestion:  Extracted all the files in artifacts/data_ingestion]
+[2025-04-21 15:37:34,178: INFO: main:  >>>>>>>stageData Ingestion stage completed<<<<<<]
+[2025-04-21 15:37:34,178: INFO: main:  >>>>>>>stageData Validation stage started<<<<<<]
+[2025-04-21 15:37:34,179: INFO: common:  ymal file:config/config.yaml loaded successfully]
+[2025-04-21 15:37:34,180: INFO: common:  ymal file:params.yaml loaded successfully]
+[2025-04-21 15:37:34,181: INFO: common:  ymal file:schema.yaml loaded successfully]
+[2025-04-21 15:37:34,181: INFO: common:  created directory at: artifacts]
+[2025-04-21 15:37:34,181: INFO: common:  created directory at: artifacts/data_validation]
+[2025-04-21 15:37:34,188: INFO: main:  >>>>>>>stageData Validation stage completed<<<<<<]
