@@ -4,6 +4,15 @@ from src.DataScience.pipeline.data_validation_pipeline import DataValidationTrai
 from src.DataScience.pipeline.data_transformation_pipeline import DataTransformationTrainingPipeline
 from src.DataScience.pipeline.model_trainer_pipeline import ModelTrainerTrainingPipeline
 
+from src.DataScience.pipeline.model_evaluation_pipeline import ModelEvaluationPipeline
+from dotenv import load_dotenv
+load_dotenv()
+import os
+
+os.environ["MLFLOW_TRACKING_USERNAME"] = os.getenv("MLFLOW_TRACKING_USERNAME")
+os.environ["MLFLOW_TRACKING_PASSWORD"] = os.getenv("MLFLOW_TRACKING_PASSWORD")
+os.environ["MLFLOW_TRACKING_URI"] = os.getenv("MLFLOW_TRACKING_URI")
+
 
 STAGE_NAME = "Data Ingestion stage"
 try:
@@ -40,6 +49,16 @@ try:
     data_ingestion = ModelTrainerTrainingPipeline()
     data_ingestion.initiate_model_trainer()
     logger.info(f">>>>>>>stage{STAGE_NAME} completed<<<<<<")
+except Exception as e:
+    logger.exception(e)
+    raise e
+
+STAGE_NAME = "Model Evaluation stage"
+try:
+    logger.info(f">>>>>>>stage{STAGE_NAME} started<<<<<<")
+    data_ingestion = ModelEvaluationPipeline()
+    data_ingestion.initiate_model_evaluation()
+    logger.info(f">>>>>>>>stage{STAGE_NAME} completed<<<<<<")
 except Exception as e:
     logger.exception(e)
     raise e
