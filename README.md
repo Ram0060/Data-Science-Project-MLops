@@ -39,7 +39,7 @@ model_trainer.py
 model_evaluation.py
 
 
-## Key Files
+# Key Files
 
 # main.py
 Entry point to run the ML pipeline. Coordinates all stages from ingestion to evaluation.
@@ -67,7 +67,4 @@ Package metadata and setup config if you want to pip-install your project locall
 
 # requirements.txt
 List of Python dependencies for reproducibility.
-
-# README.md
-Documentation file describing project objective and structure.
 
