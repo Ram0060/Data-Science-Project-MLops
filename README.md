@@ -18,11 +18,11 @@ Serves predictions through a web API (Flask or FastAPI)
 Package metadata and setup config if you want to pip-install your project locally or share it as a module.
 
 # mlpipeline
-Data Ingestion
-Data Validation
-Data Transformation (Feature Engineering & Preprocessing)
-Model Training
-Model Evaluation
+## Data Ingestion
+## Data Validation
+## Data Transformation (Feature Engineering & Preprocessing)
+## Model Training
+## Model Evaluation
 
 # Project Structure
 ## config/
