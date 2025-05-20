@@ -1,32 +1,43 @@
-Data Science Project
-A comprehensive data science project encompassing data preprocessing, exploratory data analysis (EDA), model building, and evaluation.
+# Data Science Project
+A comprehensive end-to-end Data Science project that covers the full machine learning pipeline — from raw data ingestion to model deployment. This project is designed to process, validate, transform, train, evaluate, and serve ML models using modular and production-ready code.
 
-This project aims to analyze and model data to derive meaningful insights and predictions. It involves:​
+# Project Objective
+To build a robust ML pipeline that:
 
-# workflow >>> mlpipeline
+Ingests raw data
 
+Validates its structure and schema
 
-1. Data ingestion 
-2. Data validation
-3. Data Transforamtion -- featuring engineering, data processing 
-4. Model Trainer 
-5. Model Evaluation
+Transforms data via preprocessing and feature engineering
 
+Trains and evaluates machine learning models
 
-🗂️ Folders
-config/
-Contains configuration YAMLs:
+Serves predictions through a web API (Flask or FastAPI)
 
-config.yaml: Project-wide configuration like file paths, parameters, shcema of data. 
+# Pipeline Workflow
+Package metadata and setup config if you want to pip-install your project locally or share it as a module.
 
-logs/
-Logs generated during pipeline execution (e.g., run.log) for debugging and auditing.
+mlpipeline
+├── Data Ingestion
+├── Data Validation
+├── Data Transformation (Feature Engineering & Preprocessing)
+├── Model Training
+└── Model Evaluation
 
-research/
-contains notebooks each stage of the project life cycle. The codes are initially tested over here, made sure there are no errors the ensured everything is running fine and then included in the modular coding. 
+# Project Structure
+## config/
+config.yaml: Central configuration for file paths, parameters, and schema details.
 
-src/DataScience/
-main pipeline code.  contains modules for:
+## logs/
+Stores logs from pipeline executions (e.g., run.log) for debugging and traceability.
+
+## research/
+Jupyter notebooks for prototyping and testing each stage of the pipeline.
+
+Code is validated here before being refactored into the modular pipeline.
+
+## src/DataScience/
+Modular pipeline code:
 
 data_ingestion.py
 
@@ -38,33 +49,32 @@ model_trainer.py
 
 model_evaluation.py
 
+##  Key Files
+main.py
+Entry point to orchestrate the full ML pipeline from start to finish.
 
-# Key Files
+app.py
+Flask or FastAPI app to serve model predictions via API endpoints.
 
-# main.py
-Entry point to run the ML pipeline. Coordinates all stages from ingestion to evaluation.
+template.py
+Generates project scaffolding and reusable code templates.
 
-# app.py
-Flask or FastAPI app for serving predictions — may expose a web API for model inference.
+Dockerfile
+Containerizes the entire project for easy deployment and reproducibility.
 
-# template.py
-Used to auto-generate project scaffolding/templates or code snippets.
+.gitignore
+Ignores unnecessary files (__pycache__, .env, logs, etc.) in version control.
 
-# Dockerfile
-For containerizing your project — makes it easy to run the app anywhere.
+params.yaml
+Stores hyperparameters and configuration for different pipeline stages (e.g., model type, split ratio).
 
-# .gitignore
-Ensures unnecessary files ( __pycache__, .env) are excluded from Git.
+schema.yaml
+Defines expected schema for input data — used during validation.
 
-# params.yaml
-Holds hyperparameters and settings for different pipeline stages (e.g., split ratios, model settings).
+setup.py
+Enables local installation of the project as a Python package.
 
-# schema.yaml
-Defines expected schema of the input data — used for data validation.
+requirements.txt
+Lists all Python dependencies required for the project.
 
-# setup.py
-Package metadata and setup config if you want to pip-install your project locally or share it as a module.
-
-# requirements.txt
-List of Python dependencies for reproducibility.
 
