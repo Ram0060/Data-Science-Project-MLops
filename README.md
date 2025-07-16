@@ -23,50 +23,51 @@ Serves predictions through a web API (Flask or FastAPI)
 
 # Pipeline Workflow
 Package metadata and setup config if you want to pip-install your project locally or share it as a module.
-# Pipeline Workflow
+<pre>
 ml_project/
 │
 ├── data/
-│ ├── raw/ # Raw data files
-│ ├── processed/ # Processed data
-│ └── artifacts/ # Model artifacts
+│   ├── raw/                   <em># Raw data files</em>
+│   ├── processed/             <em># Processed data</em>
+│   └── artifacts/             <em># Model artifacts</em>
 │
 ├── notebooks/
-│ └── exploratory_analysis.ipynb
+│   └── exploratory_analysis.ipynb
 │
 ├── src/
-│ ├── pipelines/ # ZenML pipelines
-│ │ ├── training_pipeline.py
-│ │ ├── deployment_pipeline.py
-│ │ └── batch_prediction_pipeline.py
-│ │
-│ ├── steps/ # ZenML steps
-│ │ ├── data_loader.py
-│ │ ├── data_validation.py
-│ │ ├── data_preprocessor.py
-│ │ ├── feature_engineer.py
-│ │ ├── model_trainer.py
-│ │ ├── evaluator.py
-│ │ └── deployer.py
-│ │
-│ ├── utils/ # Utility functions
-│ │ ├── config.py
-│ │ ├── logger.py
-│ │ └── helpers.py
-│ │
-│ ├── models/ # Custom model code
-│ │ ├── base_model.py
-│ │ └── custom_models.py
-│ │
-│ └── serving/ # Model serving
-│ ├── app.py # FastAPI app
-│ └── schemas.py # Pydantic models
+│   ├── pipelines/             <em># ZenML pipelines</em>
+│   │   ├── training_pipeline.py
+│   │   ├── deployment_pipeline.py
+│   │   └── batch_prediction_pipeline.py
+│   │
+│   ├── steps/                 <em># ZenML steps</em>
+│   │   ├── data_loader.py
+│   │   ├── data_validation.py
+│   │   ├── data_preprocessor.py
+│   │   ├── feature_engineer.py
+│   │   ├── model_trainer.py
+│   │   ├── evaluator.py
+│   │   └── deployer.py
+│   │
+│   ├── utils/                 <em># Utility functions</em>
+│   │   ├── config.py
+│   │   ├── logger.py
+│   │   └── helpers.py
+│   │
+│   ├── models/                <em># Custom model code</em>
+│   │   ├── base_model.py
+│   │   └── custom_models.py
+│   │
+│   └── serving/              <em># Model serving</em>
+│       ├── app.py            <em># FastAPI app</em>
+│       └── schemas.py        <em># Pydantic models</em>
 │
-├── tests/ # Unit and integration tests
-├── .env # Environment variables
-├── requirements.txt # Python dependencies
-├── zenml_pipeline.yaml # ZenML pipeline configuration
+├── tests/                    <em># Unit tests</em>
+├── .env                      <em># Environment vars</em>
+├── requirements.txt          <em># Dependencies</em>
+├── zenml_pipeline.yaml       <em># ZenML config</em>
 └── README.md
+</pre>
 # Project Structure
 ## config/
 config.yaml: Central configuration for file paths, parameters, and schema details.
